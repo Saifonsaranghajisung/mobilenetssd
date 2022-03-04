@@ -151,10 +151,10 @@ def event_handle(event):
         msg = str(event["message"]["text"])
         if (msg == "สวัสดี") :
             replyObj = TextSendMessage(text="ดีครับ") 
-        elif (msg == "ไปเดทกัน") :
-            replyObj = TextSendMessage(text="ไปครับ แต่งตัวสวยๆเลยนะคะ")
-        elif (msg == "คุณอยากไปเดทที่ใหนคะ") :  
-            replyObj = TextSendMessage(text="ไปทะเลกันครับ")
+        elif (msg == "ฉันต้องการเมนูอาหารจานด่วน") :
+            replyObj = TextSendMessage(text="https://retty.co.th/area/PRO38/")
+        elif (msg == "ฉันต้องการวิธีทำแกงเขียวหวาน") :  
+            replyObj = TextSendMessage(text="https://www.cpbrandsite.com/recipe/%E0%B9%81%E0%B8%81%E0%B8%87%E0%B9%80%E0%B8%82%E0%B8%B5%E0%B8%A2%E0%B8%A7%E0%B8%AB%E0%B8%A7%E0%B8%B2%E0%B8%99%E0%B9%84%E0%B8%81%E0%B9%88%E0%B8%84%E0%B8%B8%E0%B8%93%E0%B8%98%E0%B8%A7%E0%B8%B1%E0%B8%A5%E0%B8%A3%E0%B8%B1%E0%B8%95%E0%B8%99%E0%B9%8C%E0%B9%81%E0%B8%81%E0%B9%89%E0%B8%A7%E0%B9%84%E0%B8%97%E0%B8%A3%E0%B8%99%E0%B8%B1%E0%B8%99%E0%B8%97%E0%B9%8C")
         else :
             replyObj = TextSendMessage(text=msg)
         line_bot_api.reply_message(rtoken, replyObj)
